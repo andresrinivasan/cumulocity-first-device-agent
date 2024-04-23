@@ -1,1 +1,2 @@
-# cumulocity-first-device-agent
+# Cumulocity First Device Agent
+
