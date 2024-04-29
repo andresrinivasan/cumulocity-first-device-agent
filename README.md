@@ -27,7 +27,7 @@ This is a hello-word Cumulocity client written in Python and leveraging MQTT for
 
 ## Prototyping Steps
 
-The following is a rough set of steps I took before I started writing code.
+I recommend prototyping with mqttx (or your favorite MQTT tool) before jumping into the code.
 
 ### Create a new user for the device
 
