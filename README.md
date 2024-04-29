@@ -5,7 +5,7 @@ This is a hello-word Cumulocity client written in Python and leveraging MQTT for
 ## Goals
 
 ☑ Procure a Cumulocity tenant  
-☑ Create a device agent in Python, C/C++ or .net – Use MQTT protocol 
+☑ Create a device agent in Python, C/C++ or .net – Use MQTT protocol   
 🔴 Registers itself with certificate authentication (TIP: try basic authentication first)  
 ☑ Publishes data at regular intervals (choose freely such)  
 ☑ Receives control operations from Cumulocity (printing out the acknowledgement of the operation is enough)   
