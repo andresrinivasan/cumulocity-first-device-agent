@@ -85,7 +85,9 @@ Besides specifying the `100` static template, the `-i device-123` client id tell
 
 Use the 114 static template to enable commands and configuration changes
 
+```sh
 mqttx pub -V 3.1.1 -l mqtts -h us.cumulocity.com -p 8883 -u ${TENANT_ID}/${USER} -P ${PASS} -t 's/us' -m '114,c8y_Command,c8y_Configuration' -i device-123 --insecure
+sh
 
 ### Add a smart rule
 
