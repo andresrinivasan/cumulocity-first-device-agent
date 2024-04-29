@@ -1,3 +1,6 @@
 .venv
+.vscode
 mqtt-hello-world.yaml
 exercise.yaml
+
+caCertificate/
