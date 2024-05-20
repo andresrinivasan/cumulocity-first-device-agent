@@ -34,7 +34,7 @@ def on_message(client, userdata, message):
         print(f"Received unrecognized payload: {payload}")
 
     client.publish("s/us", f"501,{c8yType}", qos=1).wait_for_publish(1)
-    client.publish("s/us", f"503,{c8yType},Success")
+    client.publish("s/us", f"503,{c8yType},Success", qos=1)
 
 
 with open("exercise.yaml", "r") as f:
@@ -71,7 +71,7 @@ mqttc.loop_start()
 mqttc.publish("s/us", f"100,{device_name},c8y_MQTTDevice", qos=1).wait_for_publish(1)
 print("Device registered.")
 
-mqttc.publish("s/us", "114,c8y_Command,c8y_Configuration")
+mqttc.publish("s/us", "114,c8y_Command,c8y_Configuration", qos=1)
 print("Command and configuration enabled.")
 
 mqttc.subscribe("s/ds")
@@ -83,6 +83,7 @@ try:
         time.sleep(1)
 except (KeyboardInterrupt, SystemExit):
     pass
+
 
 mqttc.disconnect()
 mqttc.loop_stop()
